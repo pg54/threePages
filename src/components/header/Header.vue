@@ -410,6 +410,17 @@ export default {
   }
 }
 @media screen and (max-width: 750px) {
+  .section_3_features {
+    width: 59.375vw;
+    height: 29.875vw;
+  }
+  .section_3_features .font_3 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .section_3_features .space-x-9 .font_4 {
+    font-size: 12px;
+  }
   .nav-bar {
     width: auto;
     height: auto;

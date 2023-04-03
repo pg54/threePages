@@ -561,11 +561,15 @@ export default {
 }
 .page .group .group_2 .image_4{
     width: 50vw;
-    height: 158.8542vw;
+    height: 168.8542vw;
 }
 .page .group .group_2 .image_5 {
     width: 41.6667vw;
-    height: 158.8542vw;
+    height: 168.8542vw;
+}
+.page .group .section_2 .pos_3 .font_2{
+  font-size:14px;
+  line-height:14px;
 }
 }
 </style>

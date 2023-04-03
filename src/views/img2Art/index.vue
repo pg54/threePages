@@ -749,6 +749,7 @@ export default {
 }
 
 @media screen and (max-width: 750px) {
+ 
   .page .section .group {
     display: flex;
     flex-direction: column;
@@ -884,6 +885,9 @@ export default {
   .page .section .group .section_5 .section_6{
     width: 81.5vw;
     height: 100%;
+  }
+  .page .section .group .section_4 .space-y-20 .group_4{
+    overflow: scroll;
   }
 } 
 </style>

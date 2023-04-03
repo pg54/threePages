@@ -1147,7 +1147,7 @@ export default {
     left: 37.3646vw;
   }
   .page .group .group_2 .section_5 {
-    height: 176vw;
+    height: 192vw;
   }
   .page .group .group_2 .section_5 .pos_4 {
     position: static;
@@ -1165,11 +1165,13 @@ export default {
     position: static;
   }
   .page .group .group_2 .section_5 .section_9 {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
   }
   .page .group .equal-division-item {
-    width: 23.2917vw;
-    height: 23.2917vw;
+    width: 20.2917vw;
+    height: auto;
   }
   .page .group .group_2 .section_5 .font_4 {
     display: none;
@@ -1374,6 +1376,9 @@ export default {
   .page .group .group_7 .section_16 .section_19 .space-x-121 {
     margin-left: 4.3021vw;
     margin: 12px 0;
+  }
+  .page .section .group .section_4 .space-y-20 .group_4 {
+    overflow: scroll;
   }
 }
 </style>
