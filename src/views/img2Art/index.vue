@@ -17,10 +17,10 @@
               />
             </div>
             <span class="font_2">Upload Image</span>
-            <span class="font_4 text_3"
-              >The image you select will be used as a reference for the final
-              output</span
-            >
+            <span class="font_4 text_3"></span>
+              The image you select will be used as a reference for the final
+              output
+            </span>
           </div>
           <label class="cf-flex-col cf-justify-start button uploadBox">
             <div class="cf-flex-row cf-items-center section_8 space-x-17">
@@ -35,7 +35,7 @@
                 ref="fileInput"
                 id="userPhoto"
                 type="file"
-                style="display: none"
+                style="display: none;"
                 @change="handleFileUpload"
               />
             </div>
@@ -82,9 +82,12 @@
                   <input
                     type="checkbox"
                     :value="noStyleItem.styleId"
-                    style="display: none"
+                    style="display: none;"
                   />
-                  <img class="cf-shrink-0 image_13" :src="noStyleItem.styleImgUrl" />
+                  <img
+                    class="cf-shrink-0 image_13"
+                    :src="noStyleItem.styleImgUrl"
+                  />
                   <div
                     class="cf-flex-col cf-justify-start cf-items-center text-wrapper_2 pos_2"
                   >
@@ -107,7 +110,7 @@
                     :id="item.styleId"
                     :value="item.styleId"
                     v-model="styleId"
-                    style="display: none"
+                    style="display: none;"
                   />
                   <img class="cf-shrink-0 image_13" :src="item.styleImgUrl" />
                   <div
@@ -124,9 +127,9 @@
               @click="generate"
             >
               <span class="font_2">Generate</span>
-              <span class="font_4 text_5"
-                >This creation will cost {{ price }} coin</span
-              >
+              <span class="font_4 text_5">
+                This creation will cost {{ price }} coin
+              </span>
             </div>
           </div>
         </div>
@@ -134,9 +137,18 @@
           <div
             class="cf-flex-col cf-items-center cf-justify-center section_6 space-y-18"
           >
-            <img v-if="uploading" class="image_11 shake" src="../../assets/shake.png" />
+            <img
+              v-if="uploading"
+              class="image_11 shake"
+              src="../../assets/shake.png"
+            />
             <span v-if="uploading" class="font_2">Art Preview</span>
-            <img class="previewImg" v-if="!uploading && generateImgUrl" :src="generateImgUrl" alt="preview">
+            <img
+              class="previewImg"
+              v-if="!uploading && generateImgUrl"
+              :src="generateImgUrl"
+              alt="preview"
+            />
           </div>
         </div>
       </div>
@@ -145,11 +157,11 @@
 </template>
 
 <script>
-import trackEvent from "@/utils/trackEvent";
-import eventBus from "@/utils/eventBus";
-import { styleResponse } from "@/utils/data";
+import trackEvent from '@/utils/trackEvent'
+import eventBus from '@/utils/eventBus'
+import { styleResponse } from '@/utils/data'
 export default {
-  name: "img2Art",
+  name: 'img2Art',
   components: {},
   data() {
     return {
@@ -160,131 +172,132 @@ export default {
       demoItem: [],
       otherStyleItem: [],
       noStyleItem: null,
-      generateImgUrl: "",
+      generateImgUrl: '',
       uploading: false,
-    };
+    }
   },
   computed: {
     paySwapNum() {
-      const p = localStorage.getItem("paySwapNum");
-      return p ? Number(p) : 0;
+      const p = localStorage.getItem('paySwapNum')
+      return p ? Number(p) : 0
     },
     ui() {
-      return localStorage.getItem("ui");
+      return localStorage.getItem('ui')
     },
     logined() {
-      return localStorage.getItem("token");
+      return localStorage.getItem('token')
     },
     price() {
-      return this.styleId.length > 1 ? this.consumeNum * this.styleId.length : this.consumeNum;
-    }
+      return this.styleId.length > 1
+        ? this.consumeNum * this.styleId.length
+        : this.consumeNum
+    },
   },
   methods: {
     handleCLick(id) {
-      this.styleId = [];
-      this.noStyleId = id;
+      this.styleId = []
+      this.noStyleId = id
     },
     styleClick() {
-      console.log("styleClick");
-      this.noStyleId = null;
+      console.log('styleClick')
+      this.noStyleId = null
     },
     async asyncData() {
       // const response = await this.$axios.post(
       //   "/api/GetWebImgToImgStyle/interface"
       // );
-      const response = styleResponse;
-      console.log("img2Art", response);
-      if (response.result === "0") {
-        const { consumeNum, demoItem, styleItem } = response.data;
+      const response = styleResponse
+      console.log('img2Art', response)
+      if (response.result === '0') {
+        const { consumeNum, demoItem, styleItem } = response.data
         //增加默认的无样式选项
-        this.consumeNum = consumeNum;
-        this.demoItem = demoItem;
-        const [noStyle, ...otherStyle] = styleItem;
-        this.otherStyleItem = otherStyle;
-        this.noStyleItem = noStyle;
-        this.noStyleId = this.noStyleItem.styleId;
+        this.consumeNum = consumeNum
+        this.demoItem = demoItem
+        const [noStyle, ...otherStyle] = styleItem
+        this.otherStyleItem = otherStyle
+        this.noStyleItem = noStyle
+        this.noStyleId = this.noStyleItem.styleId
       } else {
-        console.error(response.message);
+        console.error(response.message)
       }
     },
     triggerUpload() {
-      this.$refs.fileInput.click();
+      this.$refs.fileInput.click()
     },
     handleFileUpload(event) {
-      const file = event.target.files[0];
+      const file = event.target.files[0]
       if (file) {
-        this.uploadImg(file);
+        this.uploadImg(file)
       } else {
-        this.previewImage = null;
+        this.previewImage = null
       }
     },
     async uploadImg(file) {
-      console.log("uploadImg");
-      const formData = new FormData();
-      formData.append("file", file);
-      formData.append("ui", this.ui);
-      console.log("formData", formData);
+      console.log('uploadImg')
+      const formData = new FormData()
+      formData.append('file', file)
+      formData.append('ui', this.ui)
+      console.log('formData', formData)
 
       const response = await this.$axios.post(
-        "/painting/upload/webimgtoimg",
-        formData
-      );
-      console.log("uploadImg", response);
-      if (response.result === "0") {
-        const { userImgUrl } = response.data;
-        this.previewImage = userImgUrl;
+        '/painting/upload/webimgtoimg',
+        formData,
+      )
+      console.log('uploadImg', response)
+      if (response.result === '0') {
+        const { userImgUrl } = response.data
+        this.previewImage = userImgUrl
       } else {
-        console.error(response.message);
+        console.error(response.message)
       }
     },
     async generate() {
-      console.log("generate");
-      console.log("paySwapNum", this.paySwapNum);
-      console.log("consumeNum", this.consumeNum);
+      console.log('generate')
+      console.log('paySwapNum', this.paySwapNum)
+      console.log('consumeNum', this.consumeNum)
       if (!this.logined) {
-        this.$router.push("/login");
+        this.$router.push('/login')
       }
-      const formData = new FormData();
-      if (!this.previewImage) return;
-      if (this.styleId.length === 0 && !this.noStyleId) return;
-      formData.append("userImgUrl", this.previewImage);
-      formData.append("ui", this.ui);
-      const styleIds = this.noStyleId ? [this.noStyleId] : this.styleId;
-      formData.append("styleIds", styleIds.join(","));
+      const formData = new FormData()
+      if (!this.previewImage) return
+      if (this.styleId.length === 0 && !this.noStyleId) return
+      formData.append('userImgUrl', this.previewImage)
+      formData.append('ui', this.ui)
+      const styleIds = this.noStyleId ? [this.noStyleId] : this.styleId
+      formData.append('styleIds', styleIds.join(','))
 
       try {
-        this.uploading = true;
+        this.uploading = true
         const response = await this.$axios.post(
-          "/api/WebImgToImgHandle/interface",
-          formData
-        );
-        console.log("generate", response);
-        if (response.result === "0") {
-          const { generateImgUrl } = response.data;
-          this.generateImgUrl = generateImgUrl;
-          trackEvent("create", "resultShow", {
-            styleIds: styleIds.join(","),
+          '/api/WebImgToImgHandle/interface',
+          formData,
+        )
+        console.log('generate', response)
+        if (response.result === '0') {
+          const { generateImgUrl } = response.data
+          this.generateImgUrl = generateImgUrl
+          trackEvent('create', 'resultShow', {
+            styleIds: styleIds.join(','),
             ui: this.ui,
-          });
-          eventBus.$emit("getUserInfo");
-        } else if (response.result === "2020") {
-          eventBus.$emit("ctrlDailog", true);
+          })
+          eventBus.$emit('getUserInfo')
+        } else if (response.result === '2020') {
+          eventBus.$emit('ctrlDailog', true)
         } else {
-          console.error(response.message);
+          console.error(response.message)
         }
       } catch (error) {
-        console.error(error);
+        console.error(error)
       } finally {
-        this.uploading = false;
+        this.uploading = false
       }
     },
   },
   mounted() {
-    this.asyncData();
-    trackEvent("create", "pageShow", { ui: this.ui });
-
+    this.asyncData()
+    trackEvent('create', 'pageShow', { ui: this.ui })
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>
@@ -303,7 +316,7 @@ export default {
     height: 4.0625vw;
   }
   .section {
-    background-image: url("https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/175ba213640b99b46aabe570f61a685b.png");
+    background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/175ba213640b99b46aabe570f61a685b.png');
     background-position: 0% 0%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -322,7 +335,7 @@ export default {
         .text {
           color: #ffffff;
           font-size: 1.4583vw;
-          font-family: "PingFang SC";
+          font-family: 'PingFang SC';
           font-weight: 500;
           line-height: 2.0833vw;
         }
@@ -333,7 +346,7 @@ export default {
         }
         .font_1 {
           font-size: 1.0417vw;
-          font-family: "PingFang SC";
+          font-family: 'PingFang SC';
           line-height: 1.4583vw;
           font-weight: 500;
           color: #ffffff;
@@ -371,7 +384,7 @@ export default {
           margin-left: 2.0833vw;
           color: #ffffff;
           font-size: 2.0833vw;
-          font-family: "PingFang SC";
+          font-family: 'PingFang SC';
           font-weight: 700;
           line-height: 2.9167vw;
         }
@@ -425,7 +438,7 @@ export default {
           }
           .font_3 {
             font-size: 0.8333vw;
-            font-family: "PingFang SC";
+            font-family: 'PingFang SC';
             line-height: 1.1458vw;
             font-weight: 700;
             color: #ffffff;
@@ -546,7 +559,7 @@ export default {
                 // background-color: #F5F5F5; /* 滚动条里面轨道的颜色 */
               }
               .grid-item {
-                background-image: url("https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/069212ae9fdcde95f17fd53e403a5f71.png");
+                background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/069212ae9fdcde95f17fd53e403a5f71.png');
                 background-position: 0% 0%;
                 background-size: 6.4583vw 6.4583vw;
                 background-repeat: no-repeat;
@@ -637,7 +650,7 @@ export default {
         }
         .font_4 {
           font-size: 0.7292vw;
-          font-family: "PingFang SC";
+          font-family: 'PingFang SC';
           line-height: 1.0417vw;
           color: #ffffff;
         }
@@ -671,7 +684,7 @@ export default {
       }
       .font_2 {
         font-size: 1.0417vw;
-        font-family: "PingFang SC";
+        font-family: 'PingFang SC';
         line-height: 1.4583vw;
         font-weight: 700;
         color: #ffffff;
@@ -734,4 +747,143 @@ export default {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
+@media screen and (max-width: 750px) {
+  .page .section .group {
+    display: flex;
+    flex-direction: column;
+  }
+  .page .section .group .section_4{
+    width:100%;
+  }
+  .page .section .group .section_4 .text_2{
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .page .section .group .section_4 .group_2 .image_6{
+    width: 3.8333vw;
+    height: 3.8333vw;
+  }
+  .page .section .group .section_4 .view{
+    margin-top:20px;
+  }
+  .page .section .group .section_4 .button .section_8{
+    margin: 0 0.9375vw;
+    /* padding: 1.3021vw 0; */
+    background-color: #151515;
+    width: 98%;
+    cursor: pointer;
+    box-sizing: border-box;
+    height:40px;
+  }
+  .page .section .group .section_4 .button .section_8 .image_7{
+    width: 4.8125vw;
+    height: 4.8125vw;
+  }
+  .page .section .group .section_4 .button .space-x-17 > :not(:first-child){
+    margin-left: 3.8854vw;
+  }
+  .page .section .group .font_2{
+    font-size:14px;
+  }
+  .page .section .group .section_4 .space-x-10 > :not(:first-child){
+    margin-left:10px;
+  }
+  .page .section .group .section_4 .view_2{
+    margin-top: 20px;
+  }
+  .page .section .group .section_4 .group_2 .image_8{
+    width: 4.0938vw;
+    height: 4.0938vw;
+  }
+  .page .section .group .section_4 .group_2 .image_9{
+    width: 14.7683vw;
+    height: 14.7683vw
+  }
+  .page .section .group .section_4 .view_4{
+    margin-top:20px;
+  }
+  .page .section .group .section_4 .group_2 .font_3{
+    font-size:14px;
+    line-height: 14px;
+  }
+  .page .section .group .section_4 .group_2 .group_3{
+    width: 14.4896vw;
+  }
+  .page .section .group .section_4 .space-x-12 > :not(:first-child){
+    margin-top: 4px;
+  }
+  .page .section .group .section_4 .space-y-20 .group_4{
+    height: 52.1354vw;
+  }
+  .page .section .group .section_4 .space-y-20 .group_4 .grid{
+    width: 79.5vw;
+    height: 88.5vh;
+  }
+  .page .section .group .section_4 .space-y-20 .group_4 .grid .grid-item_2 {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .page .section .group .section_4 .space-y-20 .group_4 .grid .grid-item_2 .image_13{
+    width:100%;
+    height: 100%;
+  }
+  .page .section .group .section_4 .space-y-20 .group_4 .grid{
+    margin: 0 2.0833vw;
+    width: 79.5vw;
+    height: 174.2188vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1.4063vw;
+    column-gap: 1.4063vw;
+    overflow-y: scroll;
+    padding-bottom: 4.6vw;
+  }
+  .page .section .group .section_4 .space-y-20 .group_4 .pos_6{
+    top: 20.5521vw;
+  }
+  .page .section .group .section_4 .space-y-20 .button_2{
+    padding: 5.4167vw 0;
+    background-color: #7116db;
+    border-radius: 1.5104vw;
+    width: 80.3333vw;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .page .section .group .section_4 .group_2 .group_3 .section_9{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    width: 14.4896vw;
+    height: 6.25vw;
+}
+  .page .section .group .section_4 .space-y-20 .group_4 .grid .grid-item_2 .text-wrapper_2 {
+    padding: 3.2083vw 0 2.4167vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 27.4583vw;
+  }
+  .page .section .group .section_4 .space-y-20 .group_4 .grid .grid-item_2 .pos_2{
+    top: 16.7917vw;
+  }
+  .page .section .group .section_4 .font_4{
+    font-size:14px;
+  }
+  .page .section .group .font_2{
+    line-height: 5.4583vw;
+  }
+  .page .section .space-x-39 > :not(:first-child){
+    margin-left: 0;
+  }
+  .page .section .group .section_5{
+    width:100%;
+    margin-top:10px;
+    height: 94.6354vw;
+
+  }
+  .page .section .group .section_5 .section_6{
+    width: 81.5vw;
+    height: 100%;
+  }
+} 
 </style>

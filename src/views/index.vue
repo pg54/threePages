@@ -1133,7 +1133,7 @@ export default {
 .text-title {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .page .group .group_2 {
     padding-top: 91.625vw;
   }

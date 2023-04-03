@@ -409,7 +409,7 @@ export default {
     line-height: 1.3021vw;
   }
 }
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .nav-bar {
     width: auto;
     height: auto;

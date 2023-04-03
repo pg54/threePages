@@ -241,7 +241,7 @@ export default {
   background-color: #000000;
 }
 .section_3_a  .img-wrap{display: none;}
-@media screen and (max-width: 600px) {
+@media screen and (max-width:750px) {
   .section_3_a{
     background-color: #000000;
   }
