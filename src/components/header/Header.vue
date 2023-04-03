@@ -1,6 +1,8 @@
 <template>
-  <div class="cf-flex-row cf-justify-between cf-items-center section_2 nav">
-    <a class="space-x-5 cf-flex-row cf-items-center" href="/">
+  <div
+    class="cf-flex-row cf-justify-between cf-items-center section_2 nav nav-bar"
+  >
+    <a class="space-x-5 cf-flex-row cf-items-center nav-logo" href="/">
       <img
         class="cf-shrink-0 image_2"
         src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660603827864674.png"
@@ -98,19 +100,19 @@
 </template>
 
 <script>
-import eventBus from "@/utils/eventBus";
-import VueNotifications from "vue-notifications";
+import eventBus from '@/utils/eventBus'
+import VueNotifications from 'vue-notifications'
 
 export default {
-  name: "aibrushHeader",
+  name: 'aibrushHeader',
   data() {
     return {
-      logined: "",
-      ui: "",
-      paySwapNum: "",
-      userName: "",
-      haedImg: "",
-    };
+      logined: '',
+      ui: '',
+      paySwapNum: '',
+      userName: '',
+      haedImg: '',
+    }
   },
   notifications: {
     showInfoMsg: {
@@ -124,62 +126,62 @@ export default {
   },
   watch: {
     $route() {
-      this.initData();
-      this.getUserInfo();
+      this.initData()
+      this.getUserInfo()
     },
   },
   methods: {
     initData() {
-      this.logined = localStorage.getItem("token") ? true : false;
-      this.ui = localStorage.getItem("ui");
-      this.paySwapNum = localStorage.getItem("paySwapNum");
+      this.logined = localStorage.getItem('token') ? true : false
+      this.ui = localStorage.getItem('ui')
+      this.paySwapNum = localStorage.getItem('paySwapNum')
     },
     async getUserInfo() {
       try {
-        const ui = localStorage.getItem("ui");
-        const formData = new FormData();
-        formData.append("ui", ui);
+        const ui = localStorage.getItem('ui')
+        const formData = new FormData()
+        formData.append('ui', ui)
         const { data } = await this.$axios.post(
-          "/api/GetWebUserInfo/interface",
-          formData
-        );
-        console.log("getUserInfo", data);
-        if (!data) return;
-        this.paySwapNum = data.paySwapNum;
-        this.userName = data.userName;
-        this.haedImg = data.haedImg;
+          '/api/GetWebUserInfo/interface',
+          formData,
+        )
+        console.log('getUserInfo', data)
+        if (!data) return
+        this.paySwapNum = data.paySwapNum
+        this.userName = data.userName
+        this.haedImg = data.haedImg
         // this.ui = data.userId;
       } catch (e) {
-        console.log({ e });
+        console.log({ e })
       }
     },
     async logout() {
-      const logoutToken = localStorage.getItem("token");
-      if (!logoutToken) return;
-      const formData = new FormData();
-      formData.append("ui", this.ui);
-      formData.append("logoutToken", logoutToken);
+      const logoutToken = localStorage.getItem('token')
+      if (!logoutToken) return
+      const formData = new FormData()
+      formData.append('ui', this.ui)
+      formData.append('logoutToken', logoutToken)
       const response = await this.$axios.post(
-        "/api/WebLogout/interface",
-        formData
-      );
-      console.log("WebLogout", response);
-      if (response.result === "0") {
-        localStorage.removeItem("token");
-        localStorage.removeItem("ui");
-        localStorage.removeItem("paySwapNum");
-        this.initData();
-        this.showInfoMsg({title: 'Logout successfully'});
+        '/api/WebLogout/interface',
+        formData,
+      )
+      console.log('WebLogout', response)
+      if (response.result === '0') {
+        localStorage.removeItem('token')
+        localStorage.removeItem('ui')
+        localStorage.removeItem('paySwapNum')
+        this.initData()
+        this.showInfoMsg({ title: 'Logout successfully' })
       }
     },
   },
   mounted() {
-    this.initData();
-    eventBus.$on("getUserInfo", () => {
-      this.getUserInfo();
-    });
+    this.initData()
+    eventBus.$on('getUserInfo', () => {
+      this.getUserInfo()
+    })
   },
-};
+}
 </script>
 <style lang="scss" scoped>
 .section_2 {
@@ -198,7 +200,7 @@ export default {
     .text {
       color: #ffffff;
       font-size: 1.4583vw;
-      font-family: "PingFang SC";
+      font-family: 'PingFang SC';
       font-weight: 500;
       line-height: 2.0833vw;
     }
@@ -215,7 +217,7 @@ export default {
 
     .font_1 {
       font-size: 1.0417vw;
-      font-family: "PingFang SC";
+      font-family: 'PingFang SC';
       line-height: 1.4583vw;
       font-weight: 500;
       color: #ffffff;
@@ -282,7 +284,7 @@ export default {
     }
     .font_4 {
       font-size: 0.7292vw;
-      font-family: "PingFang SC";
+      font-family: 'PingFang SC';
       line-height: 1.0417vw;
     }
   }
@@ -292,7 +294,7 @@ export default {
 
   .font_3 {
     font-size: 0.8333vw;
-    font-family: "PingFang SC";
+    font-family: 'PingFang SC';
     line-height: 1.1458vw;
     font-weight: 500;
   }
@@ -312,7 +314,7 @@ export default {
   }
   .font_5 {
     font-size: 0.7292vw;
-    font-family: "PingFang SC";
+    font-family: 'PingFang SC';
     line-height: 1.0417vw;
     color: #666666;
   }
@@ -364,7 +366,7 @@ export default {
   z-index: 1000;
   .font_3 {
     font-size: 0.8333vw;
-    font-family: "PingFang SC";
+    font-family: 'PingFang SC';
     line-height: 1.1458vw;
     font-weight: 500;
     color: #666666;
@@ -402,9 +404,35 @@ export default {
   .text {
     color: #ffffff;
     font-size: 0.9375vw;
-    font-family: "PingFang SC";
+    font-family: 'PingFang SC';
     font-weight: 500;
     line-height: 1.3021vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .nav-logo {
+    transform: scale(2);
+  }
+  .login-text-wrapper {
+    width: auto;
+    padding: 5px;
+    border: none;
+  }
+  .section_2 .space-x-41 .font_1 {
+    font-size: 24px;
+  }
+  .login-text-wrapper .text {
+    font-size: 20px;
+  }
+  .section_2 .space-x-41 {
+    margin-top: 20px;
   }
 }
 </style>

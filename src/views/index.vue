@@ -12,8 +12,14 @@
           </div>
           <span class="font_4 pos_4">AI</span>
           <span class="font_4 pos_5">Avatar</span>
+
+          <h1 class="text-title">AI Avatar</h1>
           <span class="font_6 text_3 pos_6">
-            AI-powered feature that generate beautiful AI avatars using your selfie. AI Avatar transform you into your alter egos. Discover a world where you can take on a different style in seconds. Perfect for profile pictures, avatars, or merely seeing yourself in a whole new way.
+            AI-powered feature that generate beautiful AI avatars using your
+            selfie. AI Avatar transform you into your alter egos. Discover a
+            world where you can take on a different style in seconds. Perfect
+            for profile pictures, avatars, or merely seeing yourself in a whole
+            new way.
           </span>
           <router-link to="/avatar" class="cf-flex-col section_9 pos_7">
             <div class="cf-flex-row cf-items-center space-x-14">
@@ -107,10 +113,17 @@
               <div class="cf-flex-col group_17">
                 <span class="cf-self-start font_4">Image to Art</span>
                 <span class="font_6 text_9">
-                  With AIbrush you can become an artist with no art tools or supplies, all you need is your imagination. Let your fantasy guide you while you explore new ideas and art styles. Choose the art style that suits your dream mood best. Spread your creativity and inspire others to create!
+                  With AIbrush you can become an artist with no art tools or
+                  supplies, all you need is your imagination. Let your fantasy
+                  guide you while you explore new ideas and art styles. Choose
+                  the art style that suits your dream mood best. Spread your
+                  creativity and inspire others to create!
                 </span>
               </div>
-              <router-link to="/img2Art" class="cf-flex-col section_18 space-y-52">
+              <router-link
+                to="/img2Art"
+                class="cf-flex-col section_18 space-y-52"
+              >
                 <div class="cf-flex-col group_10">
                   <div class="cf-flex-row cf-items-center space-x-14">
                     <img
@@ -119,21 +132,21 @@
                     />
                     <span class="font_7">Suggest Images</span>
                   </div>
-                  <div class="cf-flex-row group_11 space-x-10">
+                  <div class="cf-flex-row group_11 space-x-10 img-item">
                     <img
-                      class="equal-division-item"
+                      class="equal-division-item2"
                       src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660604610180688.png"
                     />
                     <img
-                      class="equal-division-item"
+                      class="equal-division-item2"
                       src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660604763106255.png"
                     />
                     <img
-                      class="equal-division-item"
+                      class="equal-division-item2"
                       src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660604997879618.png"
                     />
                     <img
-                      class="equal-division-item"
+                      class="equal-division-item2"
                       src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660618614860414.png"
                     />
                   </div>
@@ -142,30 +155,29 @@
                       class="image_7"
                       src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660619366179396.png"
                     />
-                    <span class="font_7"
-                      >Style（available multiple-choice）</span
-                    >
+                    <span class="font_7">
+                      Style（available multiple-choice）
+                    </span>
                   </div>
                   <div class="cf-flex-row equal-division_2 space-x-22">
-                    <div
-                      class="cf-flex-col cf-justify-start equal-division-item_2"
-                    >
-                      <div class="section_15"></div>
-                    </div>
                     <img
-                      class="equal-division-item_3"
+                      class="equal-division-item_4"
                       src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660621548084950.png"
                     />
                     <img
-                      class="equal-division-item_3"
+                      class="equal-division-item_4"
+                      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660621548084950.png"
+                    />
+                    <img
+                      class="equal-division-item_4"
                       src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660621504858296.png"
                     />
                     <img
-                      class="equal-division-item_3"
+                      class="equal-division-item_4"
                       src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660623628422557.png"
                     />
                     <img
-                      class="equal-division-item_3"
+                      class="equal-division-item_4"
                       src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660623669508258.png"
                     />
                   </div>
@@ -179,7 +191,7 @@
             </div>
           </div>
           <div class="cf-flex-row cf-justify-between cf-items-start section_19">
-            <div class="cf-flex-row cf-items-center">
+            <div class="cf-flex-row cf-items-center flex-colum-dir">
               <img
                 class="cf-shrink-0 image_2"
                 src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660603827864674.png"
@@ -189,12 +201,12 @@
                 class="cf-shrink-0 image_15"
                 src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660632663508255.png"
               />
-              <span class="font_7 text_11"
-                >Inspiration never dries up, design without repetition</span
-              >
+              <span class="font_7 text_11">
+                Inspiration never dries up, design without repetition
+              </span>
             </div>
             <div class="cf-flex-row group_19 space-x-121">
-              <div class="cf-flex-row space-x-64">
+              <div class="cf-flex-row space-x-64 space-x-121">
                 <div class="cf-flex-row">
                   <img
                     class="image_16"
@@ -205,18 +217,21 @@
                     <router-link
                       to="/text2Art"
                       class="cf-self-start font_11 text_12"
-                      >Text to image</router-link
                     >
+                      Text to image
+                    </router-link>
                     <router-link
                       to="img2Art"
                       class="cf-self-start font_11 text_15"
-                      >Image to image</router-link
                     >
+                      Image to image
+                    </router-link>
                     <router-link
                       to="avatar"
                       class="cf-self-start font_11 text_15"
-                      >AI avatar generator</router-link
                     >
+                      AI avatar generator
+                    </router-link>
                   </div>
                 </div>
                 <div class="cf-flex-row space-x-20">
@@ -229,11 +244,12 @@
                     <a
                       href="https://apps.apple.com/app/id6443746634"
                       class="font_11 text_13"
-                      >iPhone/iPad</a
                     >
-                    <router-link to="/" class="font_11 text_16"
-                      >Website</router-link
-                    >
+                      iPhone/iPad
+                    </a>
+                    <router-link to="/" class="font_11 text_16">
+                      Website
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -247,14 +263,15 @@
                   <a
                     href="https://www.facebook.com/AI-Art-Generation-108444385420598"
                     class="font_11 text_14"
-                    >Facebook</a
                   >
-                  <router-link to="/privacyPolicy" class="font_11 text_17"
-                    >Privacy Policy</router-link
-                  >
-                  <router-link to="/termsOfService" class="font_11 text_18"
-                    >Terms of Service</router-link
-                  >
+                    Facebook
+                  </a>
+                  <router-link to="/privacyPolicy" class="font_11 text_17">
+                    Privacy Policy
+                  </router-link>
+                  <router-link to="/termsOfService" class="font_11 text_18">
+                    Terms of Service
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -265,10 +282,17 @@
             <div class="cf-flex-col group_9">
               <span class="cf-self-start font_4">Text to Art</span>
               <span class="font_7 text_4">
-                Dive into your fantasy world and turn your dreams into captivating masterpieces thanks to the power of AI. Unleash your imagination and creativity, the rest is on AIbrush: enter a prompt, select an art style and watch your dream come true within seconds.
+                Dive into your fantasy world and turn your dreams into
+                captivating masterpieces thanks to the power of AI. Unleash your
+                imagination and creativity, the rest is on AIbrush: enter a
+                prompt, select an art style and watch your dream come true
+                within seconds.
               </span>
             </div>
-            <router-link to="/text2Art" class="cf-flex-col section_13 space-y-52">
+            <router-link
+              to="/text2Art"
+              class="cf-flex-col section_13 space-y-52"
+            >
               <div class="cf-flex-col group_10">
                 <div class="cf-flex-row cf-self-start space-x-12">
                   <img
@@ -281,9 +305,9 @@
                   <div class="cf-flex-col space-y-12">
                     <div class="cf-flex-row space-x-12">
                       <div class="cf-flex-col cf-justify-start text-wrapper_4">
-                        <span class="font_10 text_6"
-                          >Valentine's Day wishes to you</span
-                        >
+                        <span class="font_10 text_6">
+                          Valentine's Day wishes to you
+                        </span>
                       </div>
                       <div
                         class="cf-flex-col cf-justify-start cf-items-center text-wrapper_5"
@@ -293,9 +317,9 @@
                     </div>
                     <div class="cf-flex-row space-x-12">
                       <div class="cf-flex-col cf-justify-start text-wrapper_4">
-                        <span class="font_10 text_6"
-                          >Love song in early spring</span
-                        >
+                        <span class="font_10 text_6">
+                          Love song in early spring
+                        </span>
                       </div>
                       <div
                         class="cf-flex-col cf-justify-start cf-items-center text-wrapper_7"
@@ -308,16 +332,16 @@
                     <div
                       class="cf-flex-col cf-justify-start cf-self-start text-wrapper_6"
                     >
-                      <span class="font_10 text_7"
-                        >Vin Diesel VS Steve Granitz</span
-                      >
+                      <span class="font_10 text_7">
+                        Vin Diesel VS Steve Granitz
+                      </span>
                     </div>
                     <div
                       class="cf-flex-col cf-justify-start text-wrapper_6 view"
                     >
-                      <span class="font_10 text_8"
-                        >Gorgeous crystal palace of red roses</span
-                      >
+                      <span class="font_10 text_8">
+                        Gorgeous crystal palace of red roses
+                      </span>
                     </div>
                     <div class="section_14 pos_11"></div>
                   </div>
@@ -332,11 +356,10 @@
                   <span class="font_7">Style（available multiple-choice）</span>
                 </div>
                 <div class="cf-flex-row group_14 space-x-22">
-                  <div
-                    class="cf-flex-col cf-justify-start equal-division-item_2"
-                  >
-                    <div class="section_15"></div>
-                  </div>
+                  <img
+                    class="equal-division-item_3"
+                    src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660621548084950.png"
+                  />
                   <img
                     class="equal-division-item_3"
                     src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660621548084950.png"
@@ -381,26 +404,23 @@
               <div
                 class="cf-flex-col cf-justify-start cf-shrink-0 text-wrapper_3"
               >
-                <span class="font_9 text_5"
-                  >Key words Architectural photo of maximalist pink solar
-                  green</span
-                >
+                <span class="font_9 text_5">
+                  Key words Architectural photo of maximalist pink solar green
+                </span>
               </div>
               <div
                 class="cf-flex-col cf-justify-start cf-shrink-0 text-wrapper_3"
               >
-                <span class="font_9 text_5"
-                  >Key words Architectural photo of maximalist pink solar
-                  green</span
-                >
+                <span class="font_9 text_5">
+                  Key words Architectural photo of maximalist pink solar green
+                </span>
               </div>
               <div
                 class="cf-flex-col cf-justify-start cf-shrink-0 text-wrapper_3"
               >
-                <span class="font_9 text_5"
-                  >Key words Architectural photo of maximalist pink solar
-                  green</span
-                >
+                <span class="font_9 text_5">
+                  Key words Architectural photo of maximalist pink solar green
+                </span>
               </div>
             </div>
             <div class="cf-flex-row group_12 space-x-20">
@@ -421,26 +441,23 @@
               <div
                 class="cf-flex-col cf-justify-start cf-shrink-0 text-wrapper_3"
               >
-                <span class="font_9 text_5"
-                  >Key words Architectural photo of maximalist pink solar
-                  green</span
-                >
+                <span class="font_9 text_5">
+                  Key words Architectural photo of maximalist pink solar green
+                </span>
               </div>
               <div
                 class="cf-flex-col cf-justify-start cf-shrink-0 text-wrapper_3"
               >
-                <span class="font_9 text_5"
-                  >Key words Architectural photo of maximalist pink solar
-                  green</span
-                >
+                <span class="font_9 text_5">
+                  Key words Architectural photo of maximalist pink solar green
+                </span>
               </div>
               <div
                 class="cf-flex-col cf-justify-start cf-shrink-0 text-wrapper_3"
               >
-                <span class="font_9 text_5"
-                  >Key words Architectural photo of maximalist pink solar
-                  green</span
-                >
+                <span class="font_9 text_5">
+                  Key words Architectural photo of maximalist pink solar green
+                </span>
               </div>
             </div>
           </div>
@@ -451,44 +468,48 @@
 </template>
 
 <script>
-import Carousel from "@/components/Carousel.vue";
-import trackEvent from "@/utils/trackEvent.js";
+import Carousel from '@/components/Carousel.vue'
+import trackEvent from '@/utils/trackEvent.js'
 
 export default {
-  name: "index",
+  name: 'index',
   components: {
     Carousel,
   },
   computed: {
     ch() {
-      return this.$route.query.ch || sessionStorage.getItem("ch") || "default";
+      return this.$route.query.ch || sessionStorage.getItem('ch') || 'default'
     },
     subchannel() {
-      return this.$route.query.subchannel || sessionStorage.getItem("subchannel") || "default";
+      return (
+        this.$route.query.subchannel ||
+        sessionStorage.getItem('subchannel') ||
+        'default'
+      )
     },
     ui() {
-      return localStorage.getItem("ui");
+      return localStorage.getItem('ui')
     },
   },
   methods: {
     async initUserInfo() {
-      if (!this.ch && !this.subchannel) return;
-      const formData = new FormData();
-      if (this.ch) formData.append("ch", this.ch);
-      if (this.subchannel) formData.append("subchannel", this.subchannel);
-      if (this.ui) formData.append("ui", this.ui);
+      if (!this.ch && !this.subchannel) return
+      const formData = new FormData()
+      if (this.ch) formData.append('ch', this.ch)
+      if (this.subchannel) formData.append('subchannel', this.subchannel)
+      if (this.ui) formData.append('ui', this.ui)
       const response = await this.$axios.post(
-        "/api/WebInitUserInfo/interface",
-        formData
-      );
-      console.log("initUserInfo", response);
+        '/api/WebInitUserInfo/interface',
+        formData,
+      )
+      console.log('initUserInfo', response)
     },
   },
   async mounted() {
-    this.initUserInfo();
-    trackEvent('home', 'pageShow');
+    this.initUserInfo()
+    trackEvent('home', 'pageShow')
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>
@@ -517,7 +538,7 @@ export default {
       }
       .font_2 {
         font-size: 1.0417vw;
-        font-family: "PingFang SC";
+        font-family: 'PingFang SC';
         line-height: 1.4583vw;
         font-weight: 500;
         color: #ffffff;
@@ -559,7 +580,7 @@ export default {
       padding-top: 30.625vw;
       .section_5 {
         padding-top: 4.7917vw;
-        background-image: url("https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660527319421972.png");
+        background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660527319421972.png');
         background-position: 0% 0%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -658,7 +679,7 @@ export default {
             }
             .font_8 {
               font-size: 1.0417vw;
-              font-family: "PingFang SC";
+              font-family: 'PingFang SC';
               line-height: 1.4583vw;
               color: #ffffff;
             }
@@ -680,7 +701,7 @@ export default {
       }
       .section_3 {
         padding: 1.3542vw 10.625vw 2.9167vw;
-        background-image: url("https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c605a7e3f0310f411b2/640540e0b98f5d0011592160/30acdf99b609659d4b711301f01cd091.png");
+        background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c605a7e3f0310f411b2/640540e0b98f5d0011592160/30acdf99b609659d4b711301f01cd091.png');
         background-position: 0% 0%;
         background-size: 100vw 35.4167vw;
         background-repeat: no-repeat;
@@ -692,7 +713,7 @@ export default {
             margin-top: 0.7292vw;
             color: #ffffff66;
             font-size: 1.6667vw;
-            font-family: "PingFang SC";
+            font-family: 'PingFang SC';
             line-height: 2.5vw;
             text-align: left;
           }
@@ -713,7 +734,7 @@ export default {
       padding-top: 37.2917vw;
       .section_16 {
         padding-top: 12.8125vw;
-        background-image: url("https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660527344925332.png");
+        background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660527344925332.png');
         background-position: 0% 0%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -723,7 +744,7 @@ export default {
             width: 39.0104vw;
             .section_17 {
               filter: drop-shadow(0px 0.1042vw 0.5208vw #00000080);
-              background-image: url("https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660652475272383.png");
+              background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660652475272383.png');
               background-position: 0% 0%;
               background-size: 100% 100%;
               background-repeat: no-repeat;
@@ -809,7 +830,7 @@ export default {
             }
             .font_11 {
               font-size: 0.8333vw;
-              font-family: "PingFang SC";
+              font-family: 'PingFang SC';
               line-height: 1.1458vw;
               color: #ffffff66;
             }
@@ -954,7 +975,7 @@ export default {
         }
         .font_10 {
           font-size: 0.7292vw;
-          font-family: "PingFang SC";
+          font-family: 'PingFang SC';
           line-height: 1.0417vw;
           color: #ffffff;
         }
@@ -964,7 +985,7 @@ export default {
         }
         .equal-division-item_2 {
           border-radius: 0.5208vw;
-          background-image: url("https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660620220392104.png");
+          background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64053c035a7e3f0310f40af8/640540e0b98f5d0011592160/16780660620220392104.png');
           background-size: 100% 100%;
           background-repeat: no-repeat;
           width: 5.2083vw;
@@ -1008,7 +1029,7 @@ export default {
           height: 4.375vw;
           .font_9 {
             font-size: 0.8333vw;
-            font-family: "PingFang SC";
+            font-family: 'PingFang SC';
             line-height: 1.25vw;
             color: #ffffff66;
           }
@@ -1027,14 +1048,14 @@ export default {
     }
     .font_4 {
       font-size: 2.0833vw;
-      font-family: "PingFang SC";
+      font-family: 'PingFang SC';
       line-height: 2.9167vw;
       font-weight: 700;
       color: #ffffff;
     }
     .font_6 {
       font-size: 1.0417vw;
-      font-family: "PingFang SC";
+      font-family: 'PingFang SC';
       line-height: 1.5625vw;
       color: #ffffff;
     }
@@ -1050,7 +1071,7 @@ export default {
     }
     .font_7 {
       font-size: 1.0417vw;
-      font-family: "PingFang SC";
+      font-family: 'PingFang SC';
       line-height: 1.4583vw;
       color: #ffffff66;
     }
@@ -1091,7 +1112,7 @@ export default {
     }
     .font_5 {
       font-size: 1.0417vw;
-      font-family: "PingFang SC";
+      font-family: 'PingFang SC';
       line-height: 1.4583vw;
       font-weight: 700;
       color: #ffffff;
@@ -1103,10 +1124,256 @@ export default {
   }
   .font_1 {
     font-size: 1.4583vw;
-    font-family: "PingFang SC";
+    font-family: 'PingFang SC';
     line-height: 2.0833vw;
     font-weight: 500;
     color: #ffffff;
+  }
+}
+.text-title {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .page .group .group_2 {
+    padding-top: 91.625vw;
+  }
+  .page .group .group_2 .section_5 .group_4 .section_8 {
+    display: none;
+  }
+  .page .group .group_2 .section_5 .group_4 {
+    padding-bottom: 0.2396vw;
+  }
+  .page .group .group_2 .section_5 .group_4 .pos_3 {
+    left: 37.3646vw;
+  }
+  .page .group .group_2 .section_5 {
+    height: 176vw;
+  }
+  .page .group .group_2 .section_5 .pos_4 {
+    position: static;
+    display: inline-block;
+  }
+  .page .group .group_2 .section_5 .pos_5 {
+    position: static;
+    display: inline-block;
+  }
+  .page .group .group_2 .section_5 .pos_6 {
+    position: static;
+    z-index: 2;
+  }
+  .page .group .group_2 .section_5 .pos_7 {
+    position: static;
+  }
+  .page .group .group_2 .section_5 .section_9 {
+    width: 100%;
+  }
+  .page .group .equal-division-item {
+    width: 23.2917vw;
+    height: 23.2917vw;
+  }
+  .page .group .group_2 .section_5 .font_4 {
+    display: none;
+  }
+  .page .group .group_2 .section_5 .text_3 {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0px 40px 40px 40px;
+  }
+  .text-title {
+    color: #fff;
+    padding: 50px 40px 10px 40px;
+    display: block;
+  }
+  .page .group .group_2 .section_5 .group_4 .pos_3 {
+    bottom: -340px;
+  }
+  .page .group .font_7 {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .page .group .group_2 .section_5 .section_9 .group_6 .section_10 {
+    height: 40px;
+    border: 1px solid #ffffff;
+  }
+  .page .group .group_2 .section_5 .section_9 .group_6 .font_8 {
+    font-size: 14px;
+  }
+  .page .group .group_2 .section_5 .section_9 .group_6 .section_10 .image_9 {
+    width: 20px;
+    height: 20px;
+  }
+  .page .group .group_2 .section_5 .section_9 .group_6 .section_11 {
+    height: 40px;
+    border: 1px solid #ffffff;
+  }
+  .page .group .group_2 .section_5 .section_9 .group_6 .font_9 {
+    font-size: 14px;
+  }
+  .page .group .group_2 .section_5 .section_9 .group_6 .section_11 .image_10 {
+    width: 20px;
+    height: 20px;
+  }
+  .page .group .image_7 {
+    width: 20px;
+    height: 20px;
+  }
+  .page .group .group_2 .section_5 .section_9 .group_5 .image_8 {
+    width: 20px;
+    height: 20px;
+  }
+  .page .group .group_7 .group_10 .space-x-12 .image_12 {
+    width: 20px;
+    height: 20px;
+  }
+  .page .group .space-x-14 .image_14 {
+    width: 20px;
+    height: 20px;
+  }
+  .page .group .button {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+  }
+  .page .group .font_5 {
+    line-height: 28px;
+    font-size: 14px;
+  }
+  .page .group .group_7 .pos_10 {
+    display: flex;
+    flex-direction: column;
+  }
+  .page .group .group_7 .section_12 .group_8 {
+    width: 100%;
+  }
+  .page .group .group_7 .section_12 .group_8 .group_9 .text_4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .page .group .font_4 {
+    font-size: 14px;
+  }
+  .page .group .group_7 .group_10 .space-x-12 .text-wrapper_4 {
+    padding: 10px 0;
+    height: auto;
+  }
+  .page .group .group_7 .group_10 .space-x-12 .text-wrapper_5 {
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+  .page .group .group_7 .group_10 .space-x-12 .text-wrapper_6 {
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+  .page .group .group_7 .group_10 .space-x-12 .text-wrapper_7 {
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+
+  .page .group .group_7 .group_10 .space-x-12 .text-wrapper_8 {
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+  .page .group .group_7 .group_10 .space-x-12 .text-wrapper_9 {
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+  .page .group .group_7 .group_10 .font_10 {
+    font-size: 12px;
+  }
+  .page .group .group_7 .group_10 .group_11 .text-wrapper_6 {
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+  .page .group .group_7 .group_10 .group_11 .text-wrapper_7 {
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+  .page .group .group_7 .group_10 .space-x-11 > :not(:first-child) {
+    margin-top: 3px;
+  }
+  .page .group .group_7 .group_10 .equal-division-item_3 {
+    width: 14.2083vw;
+    height: 14.2083vw;
+  }
+  .page .group .group_7 .image_11 {
+    width: 23.8542vw;
+    height: 23.8542vw;
+  }
+  .page .group .group_7 .space-x-20 .text-wrapper_3 {
+    height: auto;
+    width: 23.8542vw;
+  }
+  .page .group .group_7 .space-x-20 .text-wrapper_3 .font_9 {
+    font-size: 12px;
+    line-height: 11px;
+  }
+  .cf-flex-row {
+    flex-wrap: wrap;
+  }
+  .page .group .group_7 .section_16 {
+    padding-top: 182.8125vw;
+  }
+  .page .group .font_6 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .page .group .group_7 .section_16 .group_15 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page .group .group_7 .section_16 .group_15 .group_16 {
+    width: 100%;
+  }
+  .page .group .group_7 .section_16 .group_15 .group_16 .group_17 {
+    width: 100%;
+  }
+  .page .group .group_7 .section_16 .group_15 .group_16 .section_18 {
+    width: 100%;
+  }
+  .equal-division-item2 {
+    width: 20vw;
+    height: 11vh;
+  }
+  .equal-division-item_4 {
+    width: 15.2083vw;
+    height: 14.2083vw;
+  }
+  .flex-colum-dir {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .page .image_2 {
+    width: 7.6042vw;
+    height: 7.6042vw;
+  }
+  .page .group .group_7 .section_16 .section_19 {
+    padding: 0;
+  }
+  .space-x-121 {
+    padding-left: 4vw;
+  }
+  .page .group .group_7 .section_16 .section_19 .group_19 .font_11 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .page .group .group_7 .section_16 .section_19 .group_19 {
+    display: flex;
+    flex-direction: column;
+  }
+  .page .group .group_7 .section_16 .section_19 .space-x-121 {
+    margin-left: 4.3021vw;
+    margin: 12px 0;
   }
 }
 </style>
